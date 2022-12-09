@@ -1,0 +1,7 @@
+*{
+    background-color: #F9FAFB;
+  }
+  .main{
+    display: flex;
+    flex-direction: row;
+  }

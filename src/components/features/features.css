@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.feat{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons{
+    background-color: #5048E5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72px;
+    height: 640px;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 640px;
+    background-color: #ffffff;
+}
+ul{
+    margin-top: 16px;
+    background: none;
+    list-style-type: none;
+}
+li{
+    padding-bottom: 10px;
+    background: none;   
+    cursor: pointer;
+}
+.add{
+    background: none;
+    border: none;
+    color:#5048E5;
+    cursor: pointer;
+}
