@@ -11,6 +11,7 @@ const Feature=()=> {
         tempArr.push(value);
         setList(tempArr);
         setValue("");
+
         
     };
 
@@ -25,6 +26,8 @@ const Feature=()=> {
         <ul>
             {list.map((item) => <li>{item} </li>)}
         </ul>
+
+        {/* <input type="text" className={add? "show" : "hide"} value={value} onChange={(e) => setValue(e.target.value)} /> */}
         {/* <input type="text" value={value} onChange={(e) => setValue(e.target.value)} /> */}
         
         <button onClick={add} className='add'> + Add </button>
