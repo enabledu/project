@@ -4,15 +4,13 @@ import './recents.css'
 const Recent =()=>{
 
     return(
-        <div className="recentsContainer">
-            <h5>Recents</h5>
             <div className="recent">
-                <div className="avatar"></div>
-                
-            </div>
-        </div>
+                <div className="avatar"></div>   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, cupiditate exercitationem sit placeat alias impedit atque</p>
+
+            </div>  
     )
 
 }
 
-export default Recent
+export default Recent;

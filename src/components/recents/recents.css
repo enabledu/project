@@ -1,20 +1,12 @@
-.recentsContainer{
-    width: 900px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-.recentsContainer h5{
-    color:#374151;
-    font-size: 20px;
-    margin:0;
-    padding-bottom: 30px;
-}
 .recent{
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* background-color: rgb(80, 72, 229,0.09); */
     min-height: 140px;
     border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.recent p{
+    background: none;
+    padding: 15px;
 }

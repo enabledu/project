@@ -2,7 +2,8 @@ import {React,useState} from 'react'
 import './createPost.css'
 import {FaBold , FaItalic , FaUnderline,FaStrikethrough,FaCode,FaListOl,FaListUl,FaImage,FaLink} from 'react-icons/fa';
 
-const CreatePost =() => {
+
+const CreatePost =({onSubmit}) => {
 
     const [inputs, setInputs] = useState({});
 
@@ -19,7 +20,7 @@ const CreatePost =() => {
 
     return(
         <div className='post'>
-            <form className='create' onSubmit={handleSubmit} id='postForm'>
+            <form className='postForm' onSubmit={handleSubmit} id='postForm'>
                 <h5> Create Post</h5>
                 <input className='title' 
                         type={Text} 
@@ -45,7 +46,7 @@ const CreatePost =() => {
                             </ul>
                         </div>
 
-                        <textarea className='ques' 
+                        <textarea className='postText' 
                                     type={Text} 
                                     placeholder={'Text (Optional)'} 
                                     name='post' 
@@ -55,13 +56,17 @@ const CreatePost =() => {
                     </div>
                     <button type='submit' 
                             className='publish' 
-                            onClick={()=>document.getElementById('postForm').reset()}>
-                                Publish
+                            onClick={()=>{
+                                document.getElementById('postForm').reset();
+                                onSubmit();
+                                }}> 
+                                Publish 
                     </button>
                 </div>
                 
-            </form>
+            </form>           
         </div>
+
     )
 }
 
