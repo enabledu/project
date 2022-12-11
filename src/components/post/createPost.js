@@ -3,7 +3,7 @@ import './createPost.css'
 import {FaBold , FaItalic , FaUnderline,FaStrikethrough,FaCode,FaListOl,FaListUl,FaImage,FaLink} from 'react-icons/fa';
 
 
-const CreatePost =({onSubmit}) => {
+const CreatePost =({afterSubmit}) => {
 
     const [inputs, setInputs] = useState({});
 
@@ -16,11 +16,13 @@ const CreatePost =({onSubmit}) => {
       const handleSubmit = (event) => {
         event.preventDefault();
         console.log(inputs);
+        afterSubmit();
       }
 
     return(
         <div className='post'>
             <form className='postForm' onSubmit={handleSubmit} id='postForm'>
+
                 <h5> Create Post</h5>
                 <input className='title' 
                         type={Text} 
@@ -58,7 +60,6 @@ const CreatePost =({onSubmit}) => {
                             className='publish' 
                             onClick={()=>{
                                 document.getElementById('postForm').reset();
-                                onSubmit();
                                 }}> 
                                 Publish 
                     </button>

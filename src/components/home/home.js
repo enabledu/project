@@ -16,7 +16,7 @@ const Home =()=>{
 
                 <input type={Text} placeholder={'Create post'} className='createOption' onClick={()=> setIsModalOpened(true)}></input>
 
-                <Modal isOpened={isModalOpened} onClose={()=>setIsModalOpened(false)}><CreatePost onSubmit={()=> setIsModalOpened(false)}></CreatePost></Modal>
+                <Modal isOpened={isModalOpened} onClose={()=>setIsModalOpened(false)}><CreatePost afterSubmit={()=> setIsModalOpened(false)}></CreatePost></Modal>
             </div>
 
             <div className="recentsContainer">
