@@ -1,12 +1,15 @@
 .recent{
     background-color: #ffffff;
-    /* background-color: rgb(80, 72, 229,0.09); */
+    
     min-height: 140px;
     border-radius: 6px;
     margin-bottom: 12px;
+    
 }
 
 .recent p{
     background: none;
     padding: 15px;
 }
+
+/* background-color: rgb(80, 72, 229,0.09); */

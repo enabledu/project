@@ -1,21 +1,20 @@
 import './App.css';
-import Feature from './components/features/features';
-import Home from './components/home/home';
-
-
-
+import Container from 'react-bootstrap/Container';
+import CreatePost from './components/CreatePost/createPost';
 
 function App() {
   return (
-    <div className="App">
-      
-      <div className="main">
-        <Feature/>
-        <Home/>
-      </div>
-      
-    </div>
+    <>
+      <Container className='appContainer'>
+        <Container fluid>
+          <CreatePost/>
+        </Container>
+      </Container>
+    </>
   );
+
 }
 
 export default App;
+
+
