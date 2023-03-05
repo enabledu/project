@@ -1,15 +1,5 @@
-import './home.css'
-
-
-
-
-const Home =()=>{
-
-    return (
-        <>
-            
-        </>
-    )
+const Home = () =>{
+    return <div>Home</div>
 }
 
 export default Home;

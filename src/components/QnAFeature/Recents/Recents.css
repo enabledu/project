@@ -1,0 +1,38 @@
+#recentsTitle{
+    font-size: medium;
+    color: #374151;
+    margin: 30px 16px;
+}
+
+.post{
+    background-color: #ffffff;
+    min-height: 140px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex; 
+}
+
+#userAvatar{
+    flex-direction: column;
+    margin-left: 16px;
+    margin-top: 16px;
+    height: 32px;
+    border-radius: 6px;
+
+}
+
+.postDetails{
+    flex-direction: column;
+    padding: 16px 16px 16px 6px;
+}
+
+#userID{
+    color: #5048E5;
+    font-size: small;
+}
+#postTitle{
+    color: #27272A;
+}
+#postBody{
+    color: #64748B;
+}

@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import './createPost.css'
+import './CreatePost.css'
 import Modal from 'react-bootstrap/Modal';
 // import {FaBold , FaItalic , FaUnderline,FaStrikethrough,FaCode,FaListOl,FaListUl,FaImage,FaLink} from 'react-icons/fa';
 
@@ -7,18 +7,19 @@ import Modal from 'react-bootstrap/Modal';
 const CreatePost =() => {
 
     const [title, setTitle] = useState("");
-    const [postText, setPostText] = useState("");
+    const [postBody, setPostBody] = useState("");
     
     const inputIsEmpty = () => title === "" ;
      
     const [show, setShow] = useState(false);
     const handleClose = () => {setShow(false)
-    console.log({title: title, post: postText})};
+    console.log({title: title, body: postBody})};
 
     return(
         <div >
+            
             <input className='createOption'
-                        type={Text} 
+                        type='text'
                         placeholder={'Create post'}  
                         onClick={()=>setShow(true)}
                 />
@@ -41,7 +42,7 @@ const CreatePost =() => {
                     <Modal.Body>
                          <div className='createPostContainer' > 
                             <input className='title' 
-                                    type={Text} 
+                                    type='text' 
                                     placeholder={'Title (Required)'} 
                                     onChange={(event) => {
                                         setTitle(event.target.value.trim());
@@ -64,11 +65,10 @@ const CreatePost =() => {
                                         </ListGroup>
                                     </div> */}
 
-                                    <textarea className='postText' 
-                                        type={Text} 
+                                    <textarea className='postBody' 
                                         placeholder={'Text (Optional)'} 
                                         onChange={(event) => {
-                                            setPostText(event.target.value.trim());
+                                            setPostBody(event.target.value.trim());
                                             }}
                                         />
                                 </div>

@@ -4,7 +4,7 @@
     padding: 0 16px;
     outline: none;
     height: 40px;
-    margin: 15px;
+    margin-top: 16px;
     min-width: 100%;
 } 
 .createPostContainer{
@@ -17,13 +17,6 @@
 .title{
     margin-bottom: 16px;
 }
-/* .createPostContainer>h5{
-    color: #374151;
-    background-color: #FFFFFF;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    font-size: 20px;
-} */
 
 .title{
     padding: 20px 0 20px 10px;
@@ -57,7 +50,7 @@
 .txtIcons ul li:hover{
     background-color: #ffffff;
 }
-.postText{
+.postBody{
     padding-left: 15px;
     padding-top: 15px;
     width: 100%;
